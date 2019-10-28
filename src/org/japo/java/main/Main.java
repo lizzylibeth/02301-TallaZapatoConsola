@@ -28,30 +28,30 @@ public class Main {
             = new Scanner(System.in, "ISO-8859-1")
                     .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
 
-    public static void main(String[] args) {     //System es una clase,out es un recurso de la clase System. el punto indica el recurso.  
+    public static void main(String[] args) {
 
         int talla = 0;
 
         try {
 
             //Leer Dato
-                System.out.print("Talla de zapato? .........: ");
-                    talla = SCN.nextInt();
+            System.out.print("Talla de zapato? .........: ");
+            talla = SCN.nextInt();
 
             //Mensaje
-                System.out.printf("Talla de zapato ..........: %d%n", talla);
+            System.out.printf("Talla de zapato ..........: %d%n", talla);
 
         } catch (Exception e) {
 
             //Mensaje
-                System.out.println("ERROR: Entrada Incorrecta");
+            System.out.println("ERROR: Entrada Incorrecta");
 
         } finally {
             //Borrar buffer
-                SCN.nextLine();
+            SCN.nextLine();
 
         }//finally
 
-       }//main
+    }//main
 
 }//class
